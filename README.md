@@ -14,7 +14,9 @@ npm start
 
 ## Known issues
 * Promises (for redirects) not yet implemented.
-* Navbar left side: test links are provided to demonstrate functionality of 1) change logged in state in Navbar right section, and 2) routing to profile page 
+* Needs custom component for better visuals of form validation errors.
+* Needs more CSS love.
+* Navbar left side: test links are provided to demonstrate functionality of 1) change logged in state in Navbar right section, and 2) routing to profile page. 
 * Validation results can be viewed in the console.
 
 
