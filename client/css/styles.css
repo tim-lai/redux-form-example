@@ -1,0 +1,207 @@
+body {
+  /*font-family: Consolas;*/
+  /*background-color: #fdfcfd;*/
+  margin-bottom: 100px;
+}
+
+a {
+  text-decoration:none;
+}
+
+/* Forms */
+
+input {
+  border-radius: 3px;
+  border: 1px solid #888;
+}
+
+input.form-error {
+  border-color: #b30e2f;
+}
+
+
+/* NAVBAR */
+
+.navbar-default {
+    background-color: white;
+    border-color: #e7e7e7;
+}
+
+.navbar-toggle {
+  margin-top:15px;
+  border:none;
+}
+
+.navbar-toggle:hover {
+  /*color:white;*/
+  /*background-color:red;*/
+}
+
+.navbar-collapse {
+  background-color:white;
+}
+
+.hide-navbar {
+  display:none;
+}
+
+#basic-nav-dropdown {
+  background-color:white;
+}
+
+#navbar {
+  background-color:white;
+  border-bottom-color:#cccccc;
+  /*font-family:Avenir;*/
+  /*font-family: Facile-Sans;*/
+  /*font-weight: lighter;*/
+}
+
+.container-fluid {
+  height:70px;
+}
+
+
+
+#dropdown-link {
+  text-align: right;
+  /*color:#a9b7c0;*/
+  color:#575858;
+}
+
+#user-display-name {
+  /*margin-top:10px;*/
+  pointer-events: none;
+  /*color:#4ca0a0;*/
+  color: #cccccc;
+}
+
+.dropdown-menu {
+  width: 110px;
+}
+
+#github-button {
+  background-color:white;
+  color:#575858;
+}
+
+.github-button {
+  padding-top:6px;
+}
+
+
+
+#navbar-links {
+margin-top:10px;
+color:#cccccc;
+font-size:22px;
+}
+
+.navbar-challenges {
+  color:white;
+}
+
+.user-display {
+  display:inline-block;
+  margin-top:10px;
+}
+
+#user-display-guest {
+  margin-right:10px;
+  color:#575858;
+  margin-top:23px;
+  display:inline-block;
+}
+
+.user-right {
+  margin-right: 5px;
+}
+
+
+
+/* CREATIVE LINKS */
+
+.navbar-default .navbar-nav>li>a {
+  margin-top:9px;
+  margin-left: 10px;
+  color:#575858;
+  padding: 6px;
+  font-weight: 700;
+  text-shadow: none;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar-default .navbar-nav>li>a::before,
+.navbar-default .navbar-nav>li>a::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:#fec34a;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.navbar-default .navbar-nav>li>a::before {
+  top: 0;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.navbar-default .navbar-nav>li>a::after {
+  bottom: 0;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  transform: translateY(10px);
+  color: #fc5848;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fc5848;
+}
+
+.navbar-default .navbar-nav>li>a:hover::before,
+.navbar-default .navbar-nav>li>a:focus::before,
+.navbar-default .navbar-nav>li>a:hover::after,
+.navbar-default .navbar-nav>li>a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+
+
+.row-spacer {
+  margin-top: 27px;
+}
+
+.landing-page, .profile-page {
+  margin-top: 110px;
+}
+
+
+
+
+/* resized-textbox to match textarea bootstrap presets*/
+.resized-textbox {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
