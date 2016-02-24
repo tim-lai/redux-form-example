@@ -22,7 +22,7 @@ class Navigation extends Component {
         <Navbar.Collapse>
           <Nav pullLeft >
           <NavItem eventKey={2.0} href="#" onClick={this.props.handleLoginChange}>Toggle Login State</NavItem>
-          <NavItem eventKey={2.1} href="/profile">Link to Profile Page</NavItem>
+          <NavItem eventKey={2.1} href="/chat">Link to Chat Page</NavItem>
           </Nav>
           <Nav pullRight>
             <Navbar.Text style={{display: this.props.isLoggedIn ? 'inline-block' : 'none'}}>Welcome {this.props.userid} </Navbar.Text>

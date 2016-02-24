@@ -11,12 +11,13 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 const history = createBrowserHistory();
 import userLoginApp from './reducers/reducers.js';
 import Navbar from './components/navbar.js';
-import LoginForm from './components/loginForm.js';
+// import LoginForm from './components/loginForm.js';
 import LoginPage from './components/loginPage.js';
 import LandingPage from './components/landingPage.js';
 import ProfilePage from './components/profilePage.js';
-import CreateAccountForm from './components/createAccountForm.js';
+// import CreateAccountForm from './components/createAccountForm.js';
 import CreateAccountPage from './components/createAccountPage.js';
+import ChatPage from './components/chatPage.js';
 
 
 
@@ -36,6 +37,7 @@ render(
         <Route path="createaccount" component={CreateAccountPage}/>
         <Route path="login" component={LoginPage}/>
         <Route path="profile" component={ProfilePage}/>
+        <Route path="chat" component={ChatPage}/>
       </Route>
     </Router>
   </Provider>,

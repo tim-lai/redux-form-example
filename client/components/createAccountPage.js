@@ -6,9 +6,8 @@ import CreateAccountForm from './createAccountForm.js';
 // import {connectReduxForm} from 'redux-form';
 import ReactDOM from 'react-dom';
 import { Component, PropTypes } from 'react';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Modal, Button } from 'react-bootstrap';
 import userLoginApp from '../reducers/reducers.js';
-import { loginAccount } from '../actions/actions.js';
+// import { loginAccount } from '../actions/actions.js';
 
 
 class CreateAccountPage extends Component {

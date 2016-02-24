@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import { LOGIN_ACCOUNT, LOGOUT_ACCOUNT, CREATE_ACCOUNT, TOGGLE_LOGIN_STATE } from '../actions/actions.js';
+import { ADD_MESSAGE, SET_MESSAGES } from '../actions/actions.js';
 
 const initUserLoggedInState = {
   isLoggedIn: false,
@@ -8,7 +9,8 @@ const initUserLoggedInState = {
   userPassword: ''
 };
 
-function userLoggedInState(state = initUserLoggedInState, action){
+const userLoggedInState = (state = initUserLoggedInState, action) => {
+// function userLoggedInState(state = initUserLoggedInState, action){
   switch(action.type) {
   case LOGIN_ACCOUNT:
     return {
@@ -40,18 +42,46 @@ function userLoggedInState(state = initUserLoggedInState, action){
 }
 
 
+// Chat Room
+
+const message = (state, action) => {
+  switch (action.type) {
+    case 'ADD_MESSAGE':
+      return {
+        id: action.id,
+        text: action.text,
+      }
+
+    default:
+      return state
+  }
+}
+
+const messages = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_MESSAGE':
+      return [
+        ...state,
+        message(undefined, action)
+      ]
+
+    default:
+      return state
+  }
+}
+
+
+
+
+
 const userLoginApp = combineReducers({
   userLoggedInState,
-  form: formReducer
+  form: formReducer,
+  messages
 });
 
 export default userLoginApp;
 
 
-// var {combineReducers} = require('redux')
-// var {reducer: formReducer} = require('redux-form')
 
-// module.exports = combineReducers({
-//   form: formReducer
-// })
 
